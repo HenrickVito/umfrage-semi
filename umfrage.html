@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umfrage "Vier Jahreszeiten"</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="div1" id="div101">
+  <h1>Umfrage "Vier Jahreszeiten"</h1>
+  <hr>
+  <p>Untersuchung musikalischer Parameter der frühen Programmmusik</p>    
+</div>
+
+<div class="div2" id="div202">
+  <h3>Würdest du dich eher als musikalisch oder unmusikalisch bezeichnen?</h3>
+  <label class="custom-checkbox">
+    <input type="radio" name="musikalisch" value="musikalisch">
+    <span class="checkmark"></span> musikalisch
+  </label>
+  <label class="custom-checkbox">
+    <input type="radio" name="musikalisch" value="unmusikalisch">
+    <span class="checkmark"></span> unmusikalisch
+  </label>
+</div>
+
+<div class="div3">
+  <h3>Welchem Geschlecht gehörst du an?</h3>
+  <label class="custom-checkbox">
+    <input type="radio" name="geschlecht" value="männlich">
+    <span class="checkmark"></span> männlich
+  </label>
+  <label class="custom-checkbox">
+    <input type="radio" name="geschlecht" value="weiblich">
+    <span class="checkmark"></span> weiblich
+  </label>
+  <label class="custom-checkbox">
+    <input type="radio" name="geschlecht" value="nicht beantworten">
+    <span class="checkmark"></span> möchte ich nicht beantworten
+  </label>
+</div>
+
+<!-- ===================================================== -->
+<!-- Hörbeispiele 1 bis 4 -->
+<!-- ===================================================== -->
+
+<!-- Hörbeispiel 1 -->
+<h2>Hörbeispiel 1 hören, im Anschluss folgende Fragen beantworten.</h2>
+<div class="div4">
+  <p>Bewerte mit Hilfe des Schiebereglers, was deiner Meinung nach am ehesten auf das gehörte Beispiel zutrifft!</p>
+
+  <h3>Wie hast du die Dynamik überwiegend wahrgenommen?</h3>
+  <div class="slider-container">
+    <input type="range" class="slider" id="sliderBewertung1" min="1" max="5" step="1" value="3" oninput="zeigeWert('sliderBewertung1', 'anzeigeBewertung1', namenBewertung)">
+    <div class="labels">
+      <span>sehr leise</span>
+      <span>leise</span>
+      <span>weiß nicht</span>
+      <span>laut</span>
+      <span>sehr laut</span>
+    </div>
+    <p>Aktueller Wert: <span id="anzeigeBewertung1">3</span></p>
+  </div>
+
+  <h3>Wie hast du das Tempo überwiegend empfunden?</h3>
+  <div class="slider-container">
+    <input type="range" class="slider" id="sliderStimmung1" min="1" max="5" step="1" value="3" oninput="zeigeWert('sliderStimmung1', 'anzeigeStimmung1', namenStimmung)">
+    <div class="labels">
+      <span>sehr langsam</span>
+      <span>langsam</span>
+      <span>weiß nicht</span>
+      <span>schnell</span>
+      <span>sehr schnell</span>
+    </div>
+    <p>Aktueller Wert: <span id="anzeigeStimmung1">3</span></p>
+  </div>
+
+  <h3>Welche der Instrumente konntest du hören?</h3>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument1" value="Geige"><span class="checkmark"></span>Geige</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument1" value="Trompete"><span class="checkmark"></span>Trompete</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument1" value="Violoncello"><span class="checkmark"></span>Violoncello</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument1" value="Querflöte"><span class="checkmark"></span>Querflöte</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument1" value="Cembalo"><span class="checkmark"></span>Cembalo</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument1" value="Pauke"><span class="checkmark"></span>Pauke</label>
+
+  <h3>Welche Emotionen würdest du dem Beispiel zuordnen?</h3>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion1" value="fröhlich"><span class="checkmark"></span>fröhlich</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion1" value="traurig"><span class="checkmark"></span>traurig</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion1" value="spannungsvoll"><span class="checkmark"></span>spannungsvoll</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion1" value="ruhig"><span class="checkmark"></span>ruhig</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion1" value="aufgeregt"><span class="checkmark"></span>aufgeregt</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion1" value="mystisch"><span class="checkmark"></span>mystisch</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion1" value="klagend"><span class="checkmark"></span>klagend</label>
+
+  <h4>Hörbeispiel 1 erneut hören, anschließend offene Frage beantworten.</h4>
+  <h3>Konntest du dir während des Hörens etwas vorstellen? Sei es eine Landschaft, ein Wetterphänomen, Jahreszeit oder ähnliches?</h3>
+  <input class="oFr" type="text" id="offeneFrage1">
+</div>
+
+<!-- Hörbeispiel 2 -->
+<h2>Hörbeispiel 2 hören, im Anschluss folgende Fragen beantworten.</h2>
+<div class="div4">
+  <p>Bewerte mit Hilfe des Schiebereglers, was deiner Meinung nach am ehesten auf das gehörte Beispiel zutrifft!</p>
+
+  <h3>Wie hast du die Dynamik überwiegend wahrgenommen?</h3>
+  <div class="slider-container">
+    <input type="range" class="slider" id="sliderBewertung2" min="1" max="5" step="1" value="3" oninput="zeigeWert('sliderBewertung2', 'anzeigeBewertung2', namenBewertung)">
+    <div class="labels">
+      <span>sehr leise</span>
+      <span>leise</span>
+      <span>weiß nicht</span>
+      <span>laut</span>
+      <span>sehr laut</span>
+    </div>
+    <p>Aktueller Wert: <span id="anzeigeBewertung2">3</span></p>
+  </div>
+
+  <h3>Wie hast du das Tempo überwiegend empfunden?</h3>
+  <div class="slider-container">
+    <input type="range" class="slider" id="sliderStimmung2" min="1" max="5" step="1" value="3" oninput="zeigeWert('sliderStimmung2', 'anzeigeStimmung2', namenStimmung)">
+    <div class="labels">
+      <span>sehr langsam</span>
+      <span>langsam</span>
+      <span>weiß nicht</span>
+      <span>schnell</span>
+      <span>sehr schnell</span>
+    </div>
+    <p>Aktueller Wert: <span id="anzeigeStimmung2">3</span></p>
+  </div>
+
+  <h3>Welche der Instrumente konntest du hören?</h3>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument2" value="Geige"><span class="checkmark"></span>Geige</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument2" value="Trompete"><span class="checkmark"></span>Trompete</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument2" value="Violoncello"><span class="checkmark"></span>Violoncello</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument2" value="Querflöte"><span class="checkmark"></span>Querflöte</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument2" value="Cembalo"><span class="checkmark"></span>Cembalo</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument2" value="Pauke"><span class="checkmark"></span>Pauke</label>
+
+  <h3>Welche Emotionen würdest du dem Beispiel zuordnen?</h3>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion2" value="fröhlich"><span class="checkmark"></span>fröhlich</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion2" value="traurig"><span class="checkmark"></span>traurig</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion2" value="spannungsvoll"><span class="checkmark"></span>spannungsvoll</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion2" value="ruhig"><span class="checkmark"></span>ruhig</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion2" value="aufgeregt"><span class="checkmark"></span>aufgeregt</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion2" value="mystisch"><span class="checkmark"></span>mystisch</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion2" value="klagend"><span class="checkmark"></span>klagend</label>
+
+  <h4>Hörbeispiel 2 erneut hören, anschließend offene Frage beantworten.</h4>
+  <h3>Konntest du dir während des Hörens etwas vorstellen? Sei es eine Landschaft, ein Wetterphänomen, Jahreszeit oder ähnliches?</h3>
+  <input class="oFr" type="text" id="offeneFrage2">
+</div>
+
+<!-- Hörbeispiel 3 -->
+<h2>Hörbeispiel 3 hören, im Anschluss folgende Fragen beantworten.</h2>
+<div class="div4">
+  <p>Bewerte mit Hilfe des Schiebereglers, was deiner Meinung nach am ehesten auf das gehörte Beispiel zutrifft!</p>
+
+  <h3>Wie hast du die Dynamik überwiegend wahrgenommen?</h3>
+  <div class="slider-container">
+    <input type="range" class="slider" id="sliderBewertung3" min="1" max="5" step="1" value="3" oninput="zeigeWert('sliderBewertung3', 'anzeigeBewertung3', namenBewertung)">
+    <div class="labels">
+      <span>sehr leise</span>
+      <span>leise</span>
+      <span>weiß nicht</span>
+      <span>laut</span>
+      <span>sehr laut</span>
+    </div>
+    <p>Aktueller Wert: <span id="anzeigeBewertung3">3</span></p>
+  </div>
+
+  <h3>Wie hast du das Tempo überwiegend empfunden?</h3>
+  <div class="slider-container">
+    <input type="range" class="slider" id="sliderStimmung3" min="1" max="5" step="1" value="3" oninput="zeigeWert('sliderStimmung3', 'anzeigeStimmung3', namenStimmung)">
+    <div class="labels">
+      <span>sehr langsam</span>
+      <span>langsam</span>
+      <span>weiß nicht</span>
+      <span>schnell</span>
+      <span>sehr schnell</span>
+    </div>
+    <p>Aktueller Wert: <span id="anzeigeStimmung3">3</span></p>
+  </div>
+
+  <h3>Welche der Instrumente konntest du hören?</h3>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument3" value="Geige"><span class="checkmark"></span>Geige</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument3" value="Trompete"><span class="checkmark"></span>Trompete</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument3" value="Violoncello"><span class="checkmark"></span>Violoncello</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument3" value="Querflöte"><span class="checkmark"></span>Querflöte</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument3" value="Cembalo"><span class="checkmark"></span>Cembalo</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument3" value="Pauke"><span class="checkmark"></span>Pauke</label>
+
+  <h3>Welche Emotionen würdest du dem Beispiel zuordnen?</h3>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion3" value="fröhlich"><span class="checkmark"></span>fröhlich</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion3" value="traurig"><span class="checkmark"></span>traurig</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion3" value="spannungsvoll"><span class="checkmark"></span>spannungsvoll</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion3" value="ruhig"><span class="checkmark"></span>ruhig</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion3" value="aufgeregt"><span class="checkmark"></span>aufgeregt</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion3" value="mystisch"><span class="checkmark"></span>mystisch</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion3" value="klagend"><span class="checkmark"></span>klagend</label>
+
+  <h4>Hörbeispiel 3 erneut hören, anschließend offene Frage beantworten.</h4>
+  <h3>Konntest du dir während des Hörens etwas vorstellen? Sei es eine Landschaft, ein Wetterphänomen, Jahreszeit oder ähnliches?</h3>
+  <input class="oFr" type="text" id="offeneFrage3">
+</div>
+
+<!-- Hörbeispiel 4 -->
+<h2>Hörbeispiel 4 hören, im Anschluss folgende Fragen beantworten.</h2>
+<div class="div4">
+  <p>Bewerte mit Hilfe des Schiebereglers, was deiner Meinung nach am ehesten auf das gehörte Beispiel zutrifft!</p>
+
+  <h3>Wie hast du die Dynamik überwiegend wahrgenommen?</h3>
+  <div class="slider-container">
+    <input type="range" class="slider" id="sliderBewertung4" min="1" max="5" step="1" value="3" oninput="zeigeWert('sliderBewertung4', 'anzeigeBewertung4', namenBewertung)">
+    <div class="labels">
+      <span>sehr leise</span>
+      <span>leise</span>
+      <span>weiß nicht</span>
+      <span>laut</span>
+      <span>sehr laut</span>
+    </div>
+    <p>Aktueller Wert: <span id="anzeigeBewertung4">3</span></p>
+  </div>
+
+  <h3>Wie hast du das Tempo überwiegend empfunden?</h3>
+  <div class="slider-container">
+    <input type="range" class="slider" id="sliderStimmung4" min="1" max="5" step="1" value="3" oninput="zeigeWert('sliderStimmung4', 'anzeigeStimmung4', namenStimmung)">
+    <div class="labels">
+      <span>sehr langsam</span>
+      <span>langsam</span>
+      <span>weiß nicht</span>
+      <span>schnell</span>
+      <span>sehr schnell</span>
+    </div>
+    <p>Aktueller Wert: <span id="anzeigeStimmung4">3</span></p>
+  </div>
+
+  <h3>Welche der Instrumente konntest du hören?</h3>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument4" value="Geige"><span class="checkmark"></span>Geige</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument4" value="Trompete"><span class="checkmark"></span>Trompete</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument4" value="Violoncello"><span class="checkmark"></span>Violoncello</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument4" value="Querflöte"><span class="checkmark"></span>Querflöte</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument4" value="Cembalo"><span class="checkmark"></span>Cembalo</label>
+  <label class="custom-checkbox"><input type="checkbox" name="instrument4" value="Pauke"><span class="checkmark"></span>Pauke</label>
+
+  <h3>Welche Emotionen würdest du dem Beispiel zuordnen?</h3>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion4" value="fröhlich"><span class="checkmark"></span>fröhlich</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion4" value="traurig"><span class="checkmark"></span>traurig</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion4" value="spannungsvoll"><span class="checkmark"></span>spannungsvoll</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion4" value="ruhig"><span class="checkmark"></span>ruhig</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion4" value="aufgeregt"><span class="checkmark"></span>aufgeregt</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion4" value="mystisch"><span class="checkmark"></span>mystisch</label>
+  <label class="custom-checkbox"><input type="checkbox" name="emotion4" value="klagend"><span class="checkmark"></span>klagend</label>
+
+  <h4>Hörbeispiel 4 erneut hören, anschließend offene Frage beantworten.</h4>
+  <h3>Konntest du dir während des Hörens etwas vorstellen? Sei es eine Landschaft, ein Wetterphänomen, Jahreszeit oder ähnliches?</h3>
+  <input class="oFr" type="text" id="offeneFrage4">
+</div>
+
+<!-- ABSENDEN BUTTON -->
+<button id="absendenBtn">Absenden</button>
+
+<script type="module" src="index.js"></script>
+
+</body>
+</html>
